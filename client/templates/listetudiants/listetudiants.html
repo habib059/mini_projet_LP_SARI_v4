@@ -1,0 +1,28 @@
+
+<template name='listetudiants'>
+    <div class="container">
+      {{> nav}}
+      {{#if currentUser}}
+      <header>
+        <p>You're logged in!</p>
+            <p><a href="#" class="logout">Logout</a></p>
+          <h4>Saisir votre Nom & Prénom</h4>
+
+                <form class="new-student">
+
+                    <input type="text" name="Name" placeholder="Name & First Name">
+                    <input type="submit" value="Add Student">
+                </form>
+
+      </header>
+<br>
+  <p> Liste des étudiants :</p>
+    <ul type="square">
+          {{#each newstudents}}
+              {{> saisie}}
+          {{/each}}
+    </ul>
+      {{/if}}
+    </div>
+
+</template>

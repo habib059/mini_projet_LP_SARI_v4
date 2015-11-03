@@ -1,0 +1,11 @@
+
+<template name="saisie">
+  <!-- class= {{#if checked}}checked{{/if}}  -->
+  <li class= {{#if checked}}checked{{/if}}>
+
+    <input type="checkbox" checked={{checked}} class= "toggle-checked"/>
+    <span class="text">{{Name}}</span>
+    <button  class="delete"  text-align="center">Remove</button>
+
+  </li>
+</template>

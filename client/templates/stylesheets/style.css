@@ -1,0 +1,44 @@
+/* CSS declarations go here */
+
+body {
+	background: #E1E6FA;
+	margin:20;
+	font: 400 17px/1.32 'Arial',"Georgia", "Xin Gothic", "Hiragino Sans GB",
+	 			"Droid Sans Fallback", "Microsoft YaHei", sans-serif;
+	color: #22427C/*0000CD*/;
+}
+label,li.a {
+    float: left;
+    font: 400 17px/1.62 'Arial',"Georgia", "Xin Gothic", "Hiragino Sans GB",
+		"Droid Sans Fallback", "Microsoft YaHei", sans-serif;
+    color: #1E90FF;
+		list-style: none;
+		display: inline;
+}
+ul {
+	list-style: square;
+}
+a {
+    display: block;
+    width: 150px;
+		color:blue;
+		text-decoration:none
+}
+small {
+  font-size: 60%;
+}
+li .text {
+  margin-left: 10px;
+}
+
+li.checked {
+  color: #888;
+}
+
+li.checked,li.text {
+  text-decoration: line-through;
+}
+
+.new-student input:focus{
+  outline: 0;
+}
